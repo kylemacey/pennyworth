@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "pennyworth",
+  "version": "0.1",
+  "browser_action": {
+    "default_icon": "assets/icon.png",
+    "default_popup": "views/palette.html",
+    "default_title": "Open the pennyworth command palette"
+  },
+  "externally_connectable": {
+    "matches": ["*://salty-basin-7245.herokuapp.com/*"]
+  },
+  "background":{
+    "scripts": ["assets/js/background.js"]
+  },
+  "permissions": [
+    "storage"
+  ]
+}
